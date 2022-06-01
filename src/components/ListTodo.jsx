@@ -7,7 +7,7 @@ const ListTodo = (props) => {
       <ul>
           {
               props.todos.map((todo, index) => (
-                  <li key={index}>{ todo.massage} <button onClick={()=>props.dispatatch(deleteTodo(todo.id))} >remove</button></li>
+                  <li key={index}>{ todo.massage} <button onClick={()=>props.dispatch(deleteTodo(todo.id))} >remove</button></li>
               ))
           }
     </ul>
